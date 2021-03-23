@@ -1,7 +1,7 @@
-import React, { Fragment, useState } from "react";
+import React, { Fragment, useEffect, useState } from "react";
 
 const Counter = () => {
-  const [count, setCount] = useState(0);
+  const [count, setCount] = useState(0); // Hook que guarda un array que tiene una variable, y una funcion
 
   handleClick = () => {
     setCount(count + 1);
@@ -10,6 +10,11 @@ const Counter = () => {
   decontClick = () => {
     setCount(count - 1);
   };
+
+  useEffect(() => {
+    console.log("Diste click " + count + " vez(s)");
+  });
+
   return (
     <Fragment>
       <button className="btn" onClick={() => handleClick()}>
