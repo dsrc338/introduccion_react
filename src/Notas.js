@@ -51,13 +51,13 @@ const Notas = (props) => {
     setShowimportant(!showImportant);
     //console.log("Click");
   };
-  console.log("showImportant", showImportant);
+  // console.log("showImportant", showImportant);
 
   const notasAMostrar = showImportant
     ? notas.filter((note) => note.important === true)
     : notas;
 
-  console.log("Notas a Mostrar", notasAMostrar);
+  // console.log("Notas a Mostrar", notasAMostrar);
   //Diversos eventos
   //onSubmit
   //onClick

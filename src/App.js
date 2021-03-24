@@ -5,7 +5,7 @@ import Counter from "./Counter";
 import Cursos from "./Cursos";
 import Conditional from "./Conditional";
 import Conditional2 from "./Conditional2";
-
+import Telefonica from "./Telefonica";
 const notes = [
   {
     id: 1,
@@ -80,6 +80,7 @@ export default function App() {
       <Cursos courses={courses} />
       <Conditional totalMessage={0} />
       <Conditional2 totalAutos={0} />
+      <Telefonica />
     </div>
   );
 }
