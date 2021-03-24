@@ -3,6 +3,8 @@ import "./styles.css";
 import Notas from "./Notas";
 import Counter from "./Counter";
 import Cursos from "./Cursos";
+import Conditional from "./Conditional";
+import Conditional2 from "./Conditional2";
 
 const notes = [
   {
@@ -76,6 +78,8 @@ export default function App() {
       <Counter />
       <Notas notes={notes} />
       <Cursos courses={courses} />
+      <Conditional totalMessage={0} />
+      <Conditional2 totalAutos={0} />
     </div>
   );
 }
