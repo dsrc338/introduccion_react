@@ -1,0 +1,34 @@
+//https://www.rest
+  //Rest es un protocolo HTTP que se comuninca
+  //A traves de JSON
+  //Que nos permite realizar las siguientes operaciones
+  //Create
+  //Read
+  //Update
+  //Delete
+
+  //Metodos
+  //Post: crear nueva funete
+  //GET Para obtener un fuente o varias.
+  //DELETE eliminar una fuente
+  //PUT / PATCH para actualizar el 'resource'
+
+  //Codigos de estado.
+  // 200 - Que todo salio bien
+  // 201 - Se creo algo correctamente.
+  // 400 - La dara que envio el cliente no es correcta.
+  // 401 - No tienes autorizacion para acceder ahí.
+  //403 - Esta prohibido el acceso para uno ahí.
+  //404 - No existe.
+  //500 - Error interno del servidor.
+
+  //¿Ventajas de usar Rest?
+  //Permite separar el cliente del servidor
+  //Nuestro cliente seria React.
+  //Nuestro servidor podria ser NodeJs, Python, PHP, GO, Erlang.
+
+  //Como esta separado el cliente del servidor, la depuracion 
+  //de errores es mas sencilla.
+
+  //Nos permite tener estabilidad, podemos dedicar esfuerzos
+  //en diferentes lados (Es servidor y nuestro cliente.)

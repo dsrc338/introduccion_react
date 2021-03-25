@@ -6,6 +6,9 @@ import Cursos from "./Cursos";
 import Conditional from "./Conditional";
 import Conditional2 from "./Conditional2";
 import Telefonica from "./Telefonica";
+import Asincrono from "./Asincrono";
+import Rest from "./Rest";
+import Todos from "./Todos";
 const notes = [
   {
     id: 1,
@@ -81,6 +84,9 @@ export default function App() {
       <Conditional totalMessage={0} />
       <Conditional2 totalAutos={0} />
       <Telefonica />
+      <Asincrono />
+      <Rest />
+      <Todos />
     </div>
   );
 }

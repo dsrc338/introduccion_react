@@ -6,8 +6,6 @@ const App = () => {
   ]);
   const [newName, setNewName] = useState("");
   const [newNumber, setNewNumber] = useState(undefined);
-  const [ShowPersons, setShowPersons] = useState(false);
-  const [showNumber, setShowNumber] = useState(false);
 
   const addPhone = (e) => {
     e.preventDefault();
@@ -32,6 +30,7 @@ const App = () => {
     const { target } = e;
     const { value } = target;
     console.log("El nuevo numero es", e.target.value);
+
     setNewNumber(value);
   };
 
@@ -43,7 +42,12 @@ const App = () => {
           Nombre: <input value={newName} onChange={handlePhoneChange} />
         </div>
         <div>
-          Numero: <input value={newNumber} onChange={handleNumberChange} />
+          Numero:{" "}
+          <input
+            value={newNumber}
+            onChange={handleNumberChange}
+            maxLength={10}
+          />
         </div>
         <div>
           <button type="submit">add</button>
